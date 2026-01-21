@@ -42,6 +42,7 @@
         gap: 2px !important;
         min-height: auto !important;
         line-height: 1 !important;
+        overflow: visible !important;
     }
 }
 
@@ -57,7 +58,7 @@
 /* Título menor em celular */
 @media (max-width: 480px) {
     .navbar h1 {
-        font-size: 0.65rem !important;
+        font-size: 0.75rem !important;
         text-align: center !important;
         line-height: 1 !important;
         margin: 0 !important;
@@ -66,6 +67,8 @@
         white-space: nowrap !important;
         overflow: visible !important;
         text-overflow: clip !important;
+        max-width: none !important;
+        width: auto !important;
     }
 }
 
