@@ -63,6 +63,9 @@
         margin: 0 !important;
         padding: 0 !important;
         grid-column: 2 !important;
+        white-space: nowrap !important;
+        overflow: visible !important;
+        text-overflow: clip !important;
     }
 }
 
