@@ -3,102 +3,39 @@
  * Media queries para diferentes tamanhos de tela
  */
 
-/* Tablets e dispositivos médios (769px - 1024px) */
-@media (max-width: 1024px) {
-    .container {
-        width: 92%;
-    }
-
-    main {
-        padding-top: 60px;
-    }
-
-    .projetos-container {
-        gap: var(--spacing-md);
-    }
-
-    .projeto {
-        flex: 1 1 calc(50% - var(--spacing-md));
-        max-width: calc(50% - var(--spacing-md));
-    }
-
-    section h2 {
-        font-size: 2rem;
-    }
-}
-
-/* Tablets (481px - 768px) */
+/* Tablets e telas menores */
 @media (max-width: 768px) {
     :root {
-        --font-3xl: 2.2rem;
-        --font-2xl: 1.6rem;
-        --font-xl: 1.4rem;
-        --font-lg: 1.1rem;
-        --spacing-lg: 1.5rem;
-    }
-
-    .container {
-        width: 90%;
-        padding: 0 var(--spacing-sm);
-    }
-
-    main {
-        padding-top: 55px;
-    }
-
-    /* Navbar tablet */
-    .navbar {
-        padding: 6px 0;
+        --font-3xl: 2.5rem;
+        --font-2xl: 1.8rem;
+        --font-xl: 1.6rem;
     }
 
     .navbar .container {
         flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-
-    .navbar h1 {
-        font-size: 1.2rem;
+        gap: var(--spacing-sm);
     }
 
     .navbar ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
+        flex-direction: column;
         width: 100%;
+        gap: var(--spacing-xs);
+        margin-top: var(--spacing-sm);
     }
 
-    .navbar ul li a {
-        padding: 4px 10px;
-        font-size: 0.85rem;
-    }
-
-    .theme-toggle-btn {
-        width: 30px;
-        height: 30px;
-    }
-
-    .theme-toggle-btn .theme-icon {
-        font-size: 0.9rem;
-    }
-
-    /* Intro Section */
-    .intro-section {
-        min-height: 70vh;
-        padding-top: 60px;
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
     }
 
     .intro-content h2 {
-        font-size: 2rem;
-        margin-bottom: 12px;
+        font-size: 2.2rem;
     }
 
     .intro-content p {
-        font-size: 1rem;
-        margin-bottom: 20px;
+        font-size: 1.1rem;
     }
 
-    /* Projects */
     .projetos-container {
         gap: var(--spacing-md);
     }
@@ -106,283 +43,42 @@
     .projeto {
         flex: 1 1 100%;
         max-width: 100%;
-        min-height: auto;
-    }
-
-    .projeto img {
-        height: 200px;
-    }
-
-    section h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1.5rem;
-    }
-
-    /* Buttons */
-    .btn {
-        padding: 10px 20px;
-        font-size: 0.95rem;
-    }
-
-    /* Contact */
-    .contact-info {
-        flex-direction: column;
-        gap: var(--spacing-sm);
-    }
-
-    .contact-info div {
-        width: 100%;
-    }
-
-    /* Footer */
-    .social-icons {
-        gap: var(--spacing-md);
-    }
-
-    .social-icons a {
-        font-size: 1.3rem;
-        width: 40px;
-        height: 40px;
-    }
-
-    footer p {
-        font-size: 0.9rem;
     }
 }
 
-/* Smartphones (320px - 480px) */
+/* Smartphones */
 @media (max-width: 480px) {
     :root {
-        --font-3xl: 1.8rem;
-        --font-2xl: 1.3rem;
-        --font-xl: 1.1rem;
-        --font-lg: 1rem;
-        --font-base: 0.95rem;
-        --font-sm: 0.85rem;
-        --spacing-lg: 1rem;
-        --spacing-md: 0.75rem;
-    }
-
-    * {
-        scroll-behavior: smooth;
+        --font-3xl: 2rem;
+        --font-2xl: 1.5rem;
+        --font-xl: 1.4rem;
     }
 
     .container {
         width: 95%;
-        padding: 0 0.5rem;
-    }
-
-    main {
-        padding-top: 50px;
-    }
-
-    /* Navbar mobile */
-    .navbar {
-        padding: 5px 0;
-    }
-
-    .navbar .container {
-        flex-direction: column;
-        gap: 4px;
-        padding: 0 var(--spacing-xs);
     }
 
     .navbar h1 {
-        font-size: 1.1rem;
-        margin-bottom: 4px;
-    }
-
-    .navbar ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 4px;
-        width: 100%;
-    }
-
-    .navbar ul li a {
-        padding: 3px 8px;
-        font-size: 0.75rem;
-        border-radius: 4px;
-    }
-
-    .theme-toggle-btn {
-        width: 28px;
-        height: 28px;
-        margin-top: 2px;
-    }
-
-    .theme-toggle-btn .theme-icon {
-        font-size: 0.8rem;
-    }
-
-    /* Intro Section */
-    .intro-section {
-        min-height: 65vh;
-        padding-top: 50px;
-        padding-bottom: 20px;
-    }
-
-    .intro-content h2 {
-        font-size: 1.6rem;
-        margin-bottom: 10px;
-        line-height: 1.2;
-    }
-
-    .intro-content p {
-        font-size: 0.9rem;
-        margin-bottom: 16px;
-        line-height: 1.4;
-    }
-
-    /* Sections */
-    section {
-        padding: 1.5rem 0;
-    }
-
-    section h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-    }
-
-    section p {
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
-
-    /* Projects */
-    .projetos-container {
-        gap: 0.75rem;
-    }
-
-    .projeto {
-        flex: 1 1 100%;
-        max-width: 100%;
-        min-height: auto;
-        box-shadow: 0 2px 12px rgba(106, 13, 173, 0.1);
-    }
-
-    .projeto img {
-        height: 160px;
-    }
-
-    .projeto h3 {
-        font-size: 1.1rem;
-        margin: 10px 0 6px 0;
-        padding: 0 12px;
-    }
-
-    .projeto p {
-        font-size: 0.85rem;
-        padding: 0 12px;
-        margin: 0 0 10px 0;
-        line-height: 1.4;
-    }
-
-    .projeto ul {
-        padding: 0 12px;
-    }
-
-    .projeto ul li {
-        font-size: 0.75rem;
-    }
-
-    .projeto .btn {
-        margin: 0 12px 12px 12px;
-        padding: 8px 16px;
-        font-size: 0.85rem;
-    }
-
-    /* Buttons */
-    .btn {
-        padding: 10px 18px;
-        font-size: 0.9rem;
-        display: inline-block;
-        text-align: center;
-    }
-
-    /* Contact Section */
-    .contact-info {
-        gap: 1rem;
-    }
-
-    .contact-info div {
-        font-size: 0.9rem;
-    }
-
-    .contact-info i {
-        font-size: 1rem;
-        margin-right: 0.5rem;
-    }
-
-    /* Footer */
-    .footer-content {
-        padding: 1.5rem 0;
-    }
-
-    .social-icons {
-        gap: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .social-icons a {
-        font-size: 1.2rem;
-        width: 36px;
-        height: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    footer p {
-        font-size: 0.8rem;
-        margin: 0.5rem 0;
-        line-height: 1.4;
-    }
-
-    /* Images */
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    /* About section */
-    .sobre-section p {
-        text-align: justify;
-        line-height: 1.6;
-    }
-}
-
-/* Smartphones muito pequenos (max 360px) */
-@media (max-width: 360px) {
-    .container {
-        width: 98%;
-    }
-
-    .navbar h1 {
-        font-size: 1rem;
-    }
-
-    .intro-content h2 {
         font-size: 1.4rem;
     }
 
+    .intro-content h2 {
+        font-size: 1.8rem;
+    }
+
     .intro-content p {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 
-    section h2 {
-        font-size: 1.3rem;
+    .btn {
+        padding: 10px 24px;
+        font-size: 1rem;
     }
 
-    .projeto img {
-        height: 140px;
-    }
-
-    .navbar ul li a {
-        padding: 2px 6px;
-        font-size: 0.7rem;
+    .social-icons a {
+        font-size: 1.4rem;
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -390,23 +86,5 @@
 @media (min-width: 1400px) {
     .container {
         max-width: 1400px;
-    }
-}
-
-/* Orientação Landscape */
-@media (max-height: 600px) and (orientation: landscape) {
-    .intro-section {
-        min-height: auto;
-        padding: 60px 0 30px;
-    }
-
-    .intro-content h2 {
-        font-size: 1.5rem;
-        margin-bottom: 8px;
-    }
-
-    .intro-content p {
-        font-size: 0.9rem;
-        margin-bottom: 12px;
     }
 }
