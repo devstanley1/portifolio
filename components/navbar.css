@@ -18,10 +18,11 @@
 /* Mobile-first: Estilos compactos para celular */
 @media (max-width: 480px) {
     .navbar {
-        padding: 2px 0 !important;
+        padding: 1px 0 !important;
         border-bottom-width: 0.5px !important;
-        box-shadow: 0 1px 2px rgba(42, 0, 60, 0.05) !important;
+        box-shadow: none !important;
         min-height: auto !important;
+        line-height: 1 !important;
     }
 }
 
@@ -34,12 +35,13 @@
 /* Container compacto em celular */
 @media (max-width: 480px) {
     .navbar .container {
-        padding: 1px 5px !important;
+        padding: 1px 3px !important;
         display: grid !important;
-        grid-template-columns: 25px 1fr 25px !important;
+        grid-template-columns: 20px 1fr 20px !important;
         align-items: center !important;
-        gap: 3px !important;
+        gap: 2px !important;
         min-height: auto !important;
+        line-height: 1 !important;
     }
 }
 
@@ -55,7 +57,7 @@
 /* Título menor em celular */
 @media (max-width: 480px) {
     .navbar h1 {
-        font-size: 0.75rem !important;
+        font-size: 0.65rem !important;
         text-align: center !important;
         line-height: 1 !important;
         margin: 0 !important;
@@ -74,11 +76,12 @@
 @media (max-width: 480px) {
     .navbar ul {
         justify-content: center !important;
-        gap: 0.2rem !important;
+        gap: 0.15rem !important;
         margin: 0 !important;
-        padding: 1px 0 !important;
+        padding: 0 !important;
         grid-column: 1 / 4 !important;
         order: 3 !important;
+        line-height: 1 !important;
     }
 }
 
@@ -93,10 +96,11 @@
 /* Links menores em celular */
 @media (max-width: 480px) {
     .navbar ul li a {
-        padding: 1px 4px !important;
-        font-size: 0.7rem !important;
+        padding: 1px 3px !important;
+        font-size: 0.65rem !important;
         font-weight: 400 !important;
-        border-radius: 4px !important;
+        border-radius: 3px !important;
+        line-height: 1 !important;
     }
 }
 
@@ -124,11 +128,11 @@
 /* Botão de tema menor em celular */
 @media (max-width: 480px) {
     .theme-toggle-btn {
-        width: 24px !important;
-        height: 24px !important;
+        width: 20px !important;
+        height: 20px !important;
         grid-column: 3 !important;
         position: static !important;
-        box-shadow: 0 1px 4px 0 #6a0dad33 !important;
+        box-shadow: 0 1px 3px 0 #6a0dad22 !important;
     }
 }
 
@@ -150,6 +154,6 @@
 /* Ícone menor em celular */
 @media (max-width: 480px) {
     .theme-toggle-btn .theme-icon {
-        font-size: 0.75rem !important;
+        font-size: 0.65rem !important;
     }
 }
