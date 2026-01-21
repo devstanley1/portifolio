@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 6 - Portfólio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="pages-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container"
+                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+                <a href="../index.html" style="text-decoration: none;">
+                    <h1 style="color: #6a0dad; margin: 0; font-size: 2rem; text-align: left;">Portfólio</h1>
+                </a>
+                <ul style="display: flex; gap: 24px; justify-content: flex-end; margin: 0; padding: 0;">
+                    <li><a href="../index.html#sobre" style="color: white; text-decoration: none;" class="scroll-link">Sobre</a></li>
+                    <li><a href="../index.html#projetos" style="color: white; text-decoration: none;"
+                            class="scroll-link">Projetos</a></li>
+                    <li><a href="../index.html#contato" style="color: white; text-decoration: none;" class="scroll-link">Contato</a>
+                    </li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar tema">
+                    <span class="theme-icon"><i class="fas fa-moon"></i></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="projeto-detail">
+        <div class="projeto-hero">
+            <div class="container">
+                <a href="../index.html#projetos" class="back-link">← Voltar aos Projetos</a>
+                <h1>Projeto 6</h1>
+            </div>
+        </div>
+
+        <section class="projeto-content">
+            <div class="container">
+                <div class="projeto-main">
+                    <div class="projeto-image-wrapper">
+                        <img src="../assets/projeto4.png" alt="Projeto 6" class="projeto-image">
+                    </div>
+
+                    <div class="projeto-info">
+                        <h2>Sobre o Projeto</h2>
+                        <p class="projeto-description">
+                            Descrição do Projeto 6. Em breve mais informações sobre este projeto.
+                        </p>
+
+                        <h3>Detalhes do Projeto</h3>
+                        <ul class="projeto-details">
+                            <li><strong>Tipo:</strong> A definir</li>
+                            <li><strong>Objetivo:</strong> A definir</li>
+                            <li><strong>Funcionalidades:</strong>
+                                <ul>
+                                    <li>Funcionalidade em desenvolvimento</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h3>Tecnologias Utilizadas</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+
+                        <div class="projeto-links">
+                            <a href="#" class="btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Ver Projeto ao Vivo
+                            </a>
+                            <a href="https://github.com" class="btn btn-secondary" target="_blank">
+                                <i class="fab fa-github"></i> Ver Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="container">
+                <div class="social-icons">
+                    <a href="https://github.com/devstanley1" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/stanley-falcao" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com/stanley.dev" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('theme-toggle');
+        const icon = btn.querySelector('.theme-icon i');
+
+        function setTheme(light) {
+            if (light) {
+                document.body.classList.add('light-theme');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                document.body.classList.remove('light-theme');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+
+            const links = document.querySelectorAll('.navbar ul li a');
+            const h1 = document.querySelector('.navbar h1');
+            if (light) {
+                links.forEach(a => a.style.color = '#18181b');
+                h1.style.color = '#6a0dad';
+            } else {
+                links.forEach(a => a.style.color = '#fff');
+                h1.style.color = '#6a0dad';
+            }
+        }
+
+        btn.addEventListener('click', () => {
+            const isLight = !document.body.classList.contains('light-theme');
+            setTheme(isLight);
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            setTheme(true);
+        } else {
+            setTheme(false);
+        }
+
+        document.querySelectorAll('.scroll-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href && href.includes('#')) {
+                    e.preventDefault();
+                    window.location.href = href;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

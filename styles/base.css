@@ -1,0 +1,56 @@
+/**
+ * Base Styles
+ * Estilos base e reset
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #000 60%, #2d0b47 100%);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: var(--font-2xl);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: var(--font-xl);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: var(--font-lg);
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    transition: all var(--transition);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}

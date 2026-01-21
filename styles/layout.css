@@ -1,0 +1,40 @@
+/**
+ * Layout Components
+ * Container e estruturas de layout
+ */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+main {
+    padding: 2rem 0 0 0;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* Flex utilities */
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

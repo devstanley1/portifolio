@@ -1,0 +1,90 @@
+/**
+ * Responsive Design
+ * Media queries para diferentes tamanhos de tela
+ */
+
+/* Tablets e telas menores */
+@media (max-width: 768px) {
+    :root {
+        --font-3xl: 2.5rem;
+        --font-2xl: 1.8rem;
+        --font-xl: 1.6rem;
+    }
+
+    .navbar .container {
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        gap: var(--spacing-xs);
+        margin-top: var(--spacing-sm);
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .intro-content p {
+        font-size: 1.1rem;
+    }
+
+    .projetos-container {
+        gap: var(--spacing-md);
+    }
+
+    .projeto {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    :root {
+        --font-3xl: 2rem;
+        --font-2xl: 1.5rem;
+        --font-xl: 1.4rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .navbar h1 {
+        font-size: 1.4rem;
+    }
+
+    .intro-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px 24px;
+        font-size: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 1.4rem;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Desktop grande */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+}

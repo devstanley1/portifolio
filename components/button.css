@@ -1,0 +1,33 @@
+/**
+ * Button Component
+ */
+
+.btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border: none;
+    box-shadow: 0 2px 12px 0 #6a0dad33;
+    cursor: pointer;
+    transition: background var(--transition), transform var(--transition);
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    transform: translateY(-2px) scale(1.04);
+}
+
+.btn:active {
+    transform: translateY(0) scale(1);
+}
+
+.btn:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}

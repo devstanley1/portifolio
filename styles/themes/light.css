@@ -1,0 +1,119 @@
+/**
+ * Light Theme
+ * Estilos para o tema claro
+ */
+
+body.light-theme {
+    --primary-color: #6a0dad;
+    --secondary-color: #a259f7;
+    --background-color: #f7f7fa;
+    --card-bg: #fff;
+    --text-color: #18181b;
+    --light-text-color: #444;
+    --white: #fff;
+}
+
+body.light-theme {
+    background: linear-gradient(135deg, #fff 60%, #e6d6f7 100%);
+    color: var(--text-color);
+}
+
+/* Navbar */
+body.light-theme .navbar {
+    background: rgba(255, 255, 255, 0.95) !important;
+    color: var(--text-color) !important;
+    border-bottom: 1.5px solid var(--primary-color);
+    box-shadow: 0 2px 8px rgba(106, 13, 173, 0.07);
+}
+
+body.light-theme .navbar h1 {
+    color: var(--primary-color) !important;
+}
+
+body.light-theme .navbar ul li a {
+    color: var(--text-color) !important;
+}
+
+body.light-theme .navbar ul li a:hover {
+    background: #ece6f7;
+    color: var(--primary-color) !important;
+}
+
+/* Theme Toggle */
+body.light-theme .theme-toggle-btn {
+    background: linear-gradient(90deg, #f5f5fa, #e6d6f7);
+    box-shadow: 0 2px 12px 0 #a259f733;
+}
+
+body.light-theme .theme-toggle-btn .theme-icon {
+    color: #6a0dad;
+}
+
+/* Intro Section */
+body.light-theme .intro-section {
+    background: linear-gradient(120deg, #ece6f7 60%, #fff 100%);
+    color: var(--text-color);
+}
+
+body.light-theme .intro-content h2 {
+    background: linear-gradient(90deg, var(--primary-color), #18181b 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Buttons */
+body.light-theme .btn {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+}
+
+body.light-theme .btn:hover {
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    color: #fff;
+}
+
+/* Project Cards */
+body.light-theme .projeto {
+    background: var(--card-bg);
+    box-shadow: 0 4px 24px rgba(106, 13, 173, 0.07);
+    border: 1.5px solid #ece6f7;
+}
+
+body.light-theme .projeto:hover {
+    box-shadow: 0 8px 32px rgba(106, 13, 173, 0.15);
+}
+
+/* Contact Form */
+body.light-theme .contact-form {
+    background: #fff;
+    box-shadow: 0 2px 16px 0 #a259f722;
+}
+
+body.light-theme .contact-form input,
+body.light-theme .contact-form textarea {
+    background: #f5f5fa;
+    color: var(--text-color);
+    border: 1.5px solid var(--primary-color);
+}
+
+/* Footer */
+body.light-theme footer {
+    background: transparent;
+    color: var(--light-text-color);
+    border-top: 1px solid #ece6f7;
+}
+
+body.light-theme .footer-content {
+    background: transparent !important;
+    color: var(--text-color) !important;
+}
+
+body.light-theme .social-icons a {
+    color: var(--primary-color) !important;
+}
+
+body.light-theme .social-icons a:hover {
+    color: var(--white) !important;
+    background: var(--primary-color);
+}

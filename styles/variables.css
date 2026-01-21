@@ -1,0 +1,39 @@
+/**
+ * CSS Variables
+ * Define todas as variáveis CSS do projeto
+ */
+
+:root {
+    /* Cores Primárias */
+    --primary-color: #a259f7;
+    --secondary-color: #6a0dad;
+    
+    /* Cores de Background */
+    --background-color: #000;
+    --card-bg: #18181b;
+    
+    /* Cores de Texto */
+    --text-color: #fff;
+    --light-text-color: #bbb;
+    --white: #fff;
+    
+    /* Utilidades */
+    --border-radius: 16px;
+    --transition: 0.3s;
+    
+    /* Espaçamentos */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+    
+    /* Tamanhos de Fonte */
+    --font-xs: 0.875rem;
+    --font-sm: 1rem;
+    --font-md: 1.15rem;
+    --font-lg: 1.3rem;
+    --font-xl: 2rem;
+    --font-2xl: 2.2rem;
+    --font-3xl: 3.2rem;
+}

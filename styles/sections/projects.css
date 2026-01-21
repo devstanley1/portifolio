@@ -1,0 +1,12 @@
+/**
+ * Projects Section
+ */
+
+.projetos-section {
+    padding: 60px 0 40px 0;
+    background: transparent;
+}
+
+.projetos-section h2 {
+    margin-bottom: var(--spacing-xl);
+}

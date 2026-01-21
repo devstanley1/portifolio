@@ -1,0 +1,37 @@
+/**
+ * Intro Section
+ */
+
+.intro-section {
+    min-height: 90vh;
+    background: linear-gradient(120deg, #18181b 60%, #2d0b47 100%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+    animation: fadeIn 1.2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.intro-content h2 {
+    font-size: var(--font-3xl);
+    margin-bottom: 18px;
+    background: linear-gradient(90deg, var(--primary-color), #fff 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.intro-content p {
+    font-size: var(--font-lg);
+    margin-bottom: 30px;
+    color: var(--light-text-color);
+}
