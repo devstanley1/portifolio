@@ -11,9 +11,17 @@
         --font-xl: 1.6rem;
     }
 
+    /* Melhoria de touch targets para navegação */
+    .navbar ul li a {
+        display: block;
+        padding: 0.8rem;
+        font-size: 1.1rem;
+    }
+
     .navbar .container {
         flex-wrap: wrap;
         gap: var(--spacing-sm);
+        padding: 1rem;
     }
 
     .navbar ul {
@@ -27,17 +35,26 @@
         width: 100%;
         text-align: center;
     }
+    
+    section {
+        padding: 3rem 1rem;
+    }
 
     .intro-content h2 {
         font-size: 2.2rem;
+        line-height: 1.2;
     }
 
     .intro-content p {
         font-size: 1.1rem;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .projetos-container {
         gap: var(--spacing-md);
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
     .projeto {
@@ -52,57 +69,96 @@
         --font-3xl: 2rem;
         --font-2xl: 1.5rem;
         --font-xl: 1.4rem;
-    }
-
-    .container {
-        width: 95%;
-    }
-
-    .navbar h1 {
-        font-size: 1.4rem;
-    }
-
-    .intro-content h2 {
-        font-size: 1.8rem;
-    }
-
-    .intro-content p {
-        font-size: 1rem;
-    }
-
-    .btn {
-        padding: 10px 24px;
-        font-size: 1rem;
-    }
-
-    .social-icons a {
-        font-size: 1.4rem;
-        width: 40px;
-        height: 40px;
+        --spacing-md: 1.5rem;
+        --spacing-lg: 2rem;
     }
 
     /* Estilos gerais para dispositivos móveis */
     body {
-        font-size: 16px;
-        padding: 0;
-        margin: 0;
+        font-size: 16px; /* Previne zoom automático no iOS em inputs */
+        line-height: 1.6;
     }
 
-    /* Estilos para a navbar em telas menores */
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
     .navbar {
-        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .navbar h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Menu expandido para toque fácil */
+    .navbar ul li a {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        display: block;
+        width: 100%;
+    }
+
+    .intro-section {
+        padding: 4rem 0;
+        min-height: auto;
+    }
+
+    .intro-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .intro-content p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Botão maior para toque */
+    .btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 280px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 2rem;
+        gap: 1.5rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+        width: 48px;
+        height: 48px; /* Touch target adequado (min 44px) */
+        display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     /* Ajustes para seções */
     section {
-        padding: 1rem;
+        padding: 2.5rem 0;
+    }
+    
+    h2, .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
     }
 
-    /* Ajustes para imagens */
+    /* Ajustes para imagens e cards */
     img {
         max-width: 100%;
         height: auto;
+    }
+    
+    .projeto {
+        margin-bottom: 2rem;
     }
 }
 
