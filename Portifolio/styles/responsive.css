@@ -6,55 +6,75 @@
 /* Tablets e telas menores */
 @media (max-width: 768px) {
     :root {
-        --font-3xl: 2.5rem;
-        --font-2xl: 1.8rem;
-        --font-xl: 1.6rem;
+        --font-3xl: 2.2rem;
+        --font-2xl: 1.6rem;
+        --font-xl: 1.4rem;
     }
 
-    /* Melhoria de touch targets para navegação */
-    .navbar ul li a {
-        display: block;
-        padding: 0.8rem;
-        font-size: 1.1rem;
+    /* Navbar mais compacta */
+    .navbar {
+        padding: 0.5rem 0;
     }
 
     .navbar .container {
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: var(--spacing-sm);
-        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .navbar h1 {
+        font-size: 1.4rem;
+        margin: 0;
     }
 
     .navbar ul {
-        flex-direction: column;
-        width: 100%;
-        gap: var(--spacing-xs);
-        margin-top: var(--spacing-sm);
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+        align-items: center;
     }
 
     .navbar ul li {
-        width: 100%;
-        text-align: center;
+        width: auto;
+        margin: 0;
+    }
+
+    .navbar ul li a {
+        display: inline-block;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: none;
     }
     
+    .theme-toggle-btn {
+        margin-left: 0.5rem;
+    }
+
     section {
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
     }
 
     .intro-content h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
         line-height: 1.2;
     }
 
     .intro-content p {
-        font-size: 1.1rem;
-        max-width: 90%;
+        font-size: 1rem;
+        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .projetos-container {
         gap: var(--spacing-md);
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     .projeto {
@@ -66,76 +86,78 @@
 /* Smartphones */
 @media (max-width: 480px) {
     :root {
-        --font-3xl: 2rem;
-        --font-2xl: 1.5rem;
-        --font-xl: 1.4rem;
-        --spacing-md: 1.5rem;
-        --spacing-lg: 2rem;
+        --font-3xl: 1.8rem;
+        --font-2xl: 1.4rem;
+        --font-xl: 1.2rem;
+        --spacing-md: 1rem;
+        --spacing-lg: 1.5rem;
     }
 
     /* Estilos gerais para dispositivos móveis */
     body {
-        font-size: 16px; /* Previne zoom automático no iOS em inputs */
-        line-height: 1.6;
+        font-size: 15px; 
+        line-height: 1.5;
     }
 
-    .container {
-        width: 100%;
-        padding: 0 1rem;
-    }
-
-    .navbar {
-        padding: 1rem 0;
+    /* Header ainda mais compacto em mobile */
+    .navbar .container {
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
     }
 
     .navbar h1 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.2rem;
+    }
+
+    .navbar ul {
+        gap: 0.8rem;
+        justify-content: center;
+        width: 100%;
     }
     
-    /* Menu expandido para toque fácil */
     .navbar ul li a {
-        padding: 1rem;
-        border-bottom: 1px solid rgba(0,0,0,0.05);
-        display: block;
-        width: 100%;
+        padding: 0.4rem;
+        font-size: 0.9rem;
+        border-bottom: none;
     }
 
     .intro-section {
-        padding: 4rem 0;
+        padding: 3rem 0;
         min-height: auto;
     }
 
     .intro-content h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
     }
 
     .intro-content p {
-        font-size: 1rem;
-        margin-bottom: 2rem;
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
     }
 
     /* Botão maior para toque */
     .btn {
-        padding: 12px 30px;
-        font-size: 1rem;
-        width: 100%;
-        max-width: 280px;
-        display: block;
-        margin: 0 auto;
-        text-align: center;
+        padding: 10px 24px;
+        font-size: 0.95rem;
+        width: auto;
+        max-width: 100%;
+        display: inline-block;
     }
 
     .social-icons {
-        margin-top: 2rem;
-        gap: 1.5rem;
+        margin-top: 1.5rem;
+        gap: 1rem;
     }
 
     .social-icons a {
-        font-size: 1.5rem;
-        width: 48px;
-        height: 48px; /* Touch target adequado (min 44px) */
+        font-size: 1.3rem;
+        width: 40px;
+        height: 40px; 
         display: flex;
         align-items: center;
         justify-content: center;
@@ -143,12 +165,12 @@
 
     /* Ajustes para seções */
     section {
-        padding: 2.5rem 0;
+        padding: 2rem 0;
     }
     
     h2, .section-title {
-        font-size: 1.8rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
     }
 
     /* Ajustes para imagens e cards */
@@ -158,7 +180,7 @@
     }
     
     .projeto {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 }
 
