@@ -15,10 +15,30 @@
     backdrop-filter: blur(10px);
 }
 
+/* Mobile-first: Estilos compactos para celular */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px 0;
+        border-bottom-width: 0.5px;
+        box-shadow: 0 1px 4px rgba(42, 0, 60, 0.1);
+    }
+}
+
 .navbar .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/* Container compacto em celular */
+@media (max-width: 480px) {
+    .navbar .container {
+        padding: 3px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3px;
+        position: relative;
+    }
 }
 
 .navbar h1 {
@@ -30,10 +50,32 @@
     background-clip: text;
 }
 
+/* Título menor em celular */
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 2px;
+    }
+}
+
 .navbar ul {
     display: flex;
     justify-content: flex-end;
     gap: var(--spacing-md);
+}
+
+/* Menu horizontal compacto em celular */
+@media (max-width: 480px) {
+    .navbar ul {
+        justify-content: center;
+        gap: 0.4rem;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .navbar ul li a {
@@ -42,6 +84,14 @@
     padding: 6px 14px;
     border-radius: 8px;
     transition: color var(--transition), background var(--transition);
+}
+
+/* Links menores em celular */
+@media (max-width: 480px) {
+    .navbar ul li a {
+        padding: 3px 8px;
+        font-size: 0.8rem;
+    }
 }
 
 .navbar ul li a:hover {
@@ -65,6 +115,17 @@
     outline: none;
 }
 
+/* Botão de tema menor em celular */
+@media (max-width: 480px) {
+    .theme-toggle-btn {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+}
+
 .theme-toggle-btn:hover,
 .theme-toggle-btn:focus {
     background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
@@ -78,4 +139,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Ícone menor em celular */
+@media (max-width: 480px) {
+    .theme-toggle-btn .theme-icon {
+        font-size: 1rem;
+    }
 }
