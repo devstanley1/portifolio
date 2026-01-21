@@ -18,9 +18,9 @@
 /* Mobile-first: Estilos compactos para celular */
 @media (max-width: 480px) {
     .navbar {
-        padding: 5px 0;
+        padding: 3px 0;
         border-bottom-width: 0.5px;
-        box-shadow: 0 1px 4px rgba(42, 0, 60, 0.1);
+        box-shadow: 0 1px 3px rgba(42, 0, 60, 0.08);
     }
 }
 
@@ -33,11 +33,11 @@
 /* Container compacto em celular */
 @media (max-width: 480px) {
     .navbar .container {
-        padding: 3px 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 3px;
-        position: relative;
+        padding: 2px 8px;
+        display: grid;
+        grid-template-columns: 32px 1fr 32px;
+        align-items: center;
+        gap: 5px;
     }
 }
 
@@ -53,11 +53,11 @@
 /* Título menor em celular */
 @media (max-width: 480px) {
     .navbar h1 {
-        font-size: 1rem;
-        width: 100%;
+        font-size: 0.9rem;
         text-align: center;
-        line-height: 1.2;
-        margin-bottom: 2px;
+        line-height: 1.1;
+        margin: 0;
+        grid-column: 2;
     }
 }
 
@@ -71,10 +71,11 @@
 @media (max-width: 480px) {
     .navbar ul {
         justify-content: center;
-        gap: 0.4rem;
-        width: 100%;
+        gap: 0.3rem;
         margin: 0;
-        padding: 0;
+        padding: 2px 0;
+        grid-column: 1 / 4;
+        order: 3;
     }
 }
 
@@ -89,8 +90,9 @@
 /* Links menores em celular */
 @media (max-width: 480px) {
     .navbar ul li a {
-        padding: 3px 8px;
-        font-size: 0.8rem;
+        padding: 2px 6px;
+        font-size: 0.75rem;
+        font-weight: 500;
     }
 }
 
@@ -118,11 +120,10 @@
 /* Botão de tema menor em celular */
 @media (max-width: 480px) {
     .theme-toggle-btn {
-        width: 32px;
-        height: 32px;
-        position: absolute;
-        right: 10px;
-        top: 5px;
+        width: 28px;
+        height: 28px;
+        grid-column: 3;
+        position: static;
     }
 }
 
@@ -144,6 +145,6 @@
 /* Ícone menor em celular */
 @media (max-width: 480px) {
     .theme-toggle-btn .theme-icon {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
