@@ -14,6 +14,7 @@
     /* Navbar mais compacta */
     .navbar {
         padding: 0.5rem 0;
+        border-bottom-width: 1px;
     }
 
     .navbar .container {
@@ -100,6 +101,11 @@
     }
 
     /* Header ainda mais compacto em mobile */
+    .navbar {
+        padding: 0.4rem 0;
+        border-bottom-width: 0.5px;
+    }
+    
     .navbar .container {
         justify-content: center;
         gap: 0.5rem;
