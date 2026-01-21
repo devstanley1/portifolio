@@ -75,13 +75,22 @@
 /* Menu horizontal compacto em celular */
 @media (max-width: 480px) {
     .navbar ul {
+        display: flex !important;
+        flex-direction: row !important;
         justify-content: center !important;
-        gap: 0.15rem !important;
+        align-items: center !important;
+        gap: 0.25rem !important;
         margin: 0 !important;
         padding: 0 !important;
         grid-column: 1 / 4 !important;
         order: 3 !important;
         line-height: 1 !important;
+        width: 100% !important;
+    }
+    
+    .navbar ul li {
+        display: inline-block !important;
+        margin: 0 !important;
     }
 }
 
