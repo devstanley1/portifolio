@@ -13,6 +13,7 @@
     box-shadow: 0 2px 8px rgba(42, 0, 60, 0.15);
     border-bottom: 1.5px solid var(--primary-color);
     backdrop-filter: blur(10px);
+    border-radius: 0 0 20px 20px;
 }
 
 /* Mobile-first: Estilos compactos para celular */
@@ -101,7 +102,7 @@
     color: var(--text-color);
     font-weight: 600;
     padding: 6px 14px;
-    border-radius: 8px;
+    border-radius: 20px;
     transition: color var(--transition), background var(--transition);
 }
 

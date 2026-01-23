@@ -49,7 +49,7 @@
     gap: 14px;
     background: #18181b;
     padding: var(--spacing-lg) var(--spacing-md);
-    border-radius: var(--border-radius);
+    border-radius: 24px;
     box-shadow: 0 2px 16px 0 #6a0dad22;
 }
 
@@ -59,7 +59,7 @@
     background: #23232b;
     color: var(--text-color);
     border: 1.5px solid var(--primary-color);
-    border-radius: 8px;
+    border-radius: 16px;
     font-size: var(--font-sm);
     font-family: inherit;
     transition: border var(--transition), box-shadow var(--transition);
