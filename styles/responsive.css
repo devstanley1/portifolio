@@ -80,6 +80,31 @@
         width: 40px;
         height: 40px;
     }
+
+    .projetos-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: var(--spacing-md);
+        justify-content: flex-start;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: var(--spacing-sm);
+    }
+
+    .projeto {
+        flex: 0 0 85%;
+        max-width: 85%;
+        scroll-snap-align: start;
+    }
+
+    .projetos-container::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .projetos-container::-webkit-scrollbar-thumb {
+        background: rgba(162, 89, 247, 0.5);
+        border-radius: 999px;
+    }
 }
 
 /* Desktop grande */
