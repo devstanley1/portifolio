@@ -5,27 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ContaPro: Gestao para Escritorio de Contabilidade - Portfólio</title>
-    <link rel="stylesheet" href="../style.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../components/navbar.css">
+    <link rel="stylesheet" href="../components/button.css">
+    <link rel="stylesheet" href="../components/footer.css">
+    <link rel="stylesheet" href="../styles/themes/light.css">
     <link rel="stylesheet" href="pages-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300;600&display=swap"
-        rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="container"
-                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
-                <a href="../index.html" style="text-decoration: none;">
-                    <h1 style="color: #6a0dad; margin: 0; font-size: 2rem; text-align: left;">Portfólio</h1>
+            <div class="container">
+                <a href="../index.html">
+                    <h1>Portfólio</h1>
                 </a>
-                <ul style="display: flex; gap: 24px; justify-content: flex-end; margin: 0; padding: 0;">
-                    <li><a href="../index.html#sobre" style="color: white; text-decoration: none;" class="scroll-link">Sobre</a></li>
-                    <li><a href="../index.html#projetos" style="color: white; text-decoration: none;"
-                            class="scroll-link">Projetos</a></li>
-                    <li><a href="../index.html#contato" style="color: white; text-decoration: none;" class="scroll-link">Contato</a>
-                    </li>
+                <ul>
+                    <li><a href="../index.html#sobre" class="scroll-link">Sobre</a></li>
+                    <li><a href="../index.html#projetos" class="scroll-link">Projetos</a></li>
+                    <li><a href="../index.html#contato" class="scroll-link">Contato</a></li>
                 </ul>
                 <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar tema">
                     <span class="theme-icon"><i class="fas fa-moon"></i></span>
@@ -46,7 +56,7 @@
             <div class="container">
                 <div class="projeto-main">
                     <div class="projeto-image-wrapper">
-                        <img src="../assets/projeto4.png" alt="Sistema de gestao para escritorio de contabilidade" class="projeto-image">
+                        <img src="../assets/contaproimg.png" alt="Sistema de gestao para escritorio de contabilidade" class="projeto-image">
                     </div>
 
                     <div class="projeto-info">
@@ -106,55 +116,9 @@
         </div>
     </footer>
 
-    <script>
-        const btn = document.getElementById('theme-toggle');
-        const icon = btn.querySelector('.theme-icon i');
-
-        function setTheme(light) {
-            if (light) {
-                document.body.classList.add('light-theme');
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-            } else {
-                document.body.classList.remove('light-theme');
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-            }
-
-            const links = document.querySelectorAll('.navbar ul li a');
-            const h1 = document.querySelector('.navbar h1');
-            if (light) {
-                links.forEach(a => a.style.color = '#18181b');
-                h1.style.color = '#6a0dad';
-            } else {
-                links.forEach(a => a.style.color = '#fff');
-                h1.style.color = '#6a0dad';
-            }
-        }
-
-        btn.addEventListener('click', () => {
-            const isLight = !document.body.classList.contains('light-theme');
-            setTheme(isLight);
-            localStorage.setItem('theme', isLight ? 'light' : 'dark');
-        });
-
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'light') {
-            setTheme(true);
-        } else {
-            setTheme(false);
-        }
-
-        document.querySelectorAll('.scroll-link').forEach(link => {
-            link.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href && href.includes('#')) {
-                    e.preventDefault();
-                    window.location.href = href;
-                }
-            });
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/theme-toggle.js"></script>
 </body>
 
 </html>
