@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="components/navbar.css">
     <link rel="stylesheet" href="components/button.css">
     <link rel="stylesheet" href="components/project-card.css">
-    <link rel="stylesheet" href="styles/carousel.css">
     <link rel="stylesheet" href="components/footer.css">
     <link rel="stylesheet" href="styles/sections/intro.css">
     <link rel="stylesheet" href="styles/sections/about.css">
@@ -34,6 +33,7 @@
     <link rel="stylesheet" href="styles/sections/contact.css">
     <link rel="stylesheet" href="styles/themes/light.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="react-carousel/dist/carousel.css">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,7 +90,132 @@
         <section id="projetos" class="projetos-section">
             <div class="container">
                 <h2>Meus Projetos</h2>
-                <div id="projects-carousel" class="projetos-carousel"></div>
+                <div class="projetos-container">
+                    <!-- Projeto 1 -->
+                    <article class="projeto">
+                        <img src="assets/projeto1.png" alt="Captura de tela da página de vendas" loading="lazy">
+                        <h3>Página de Vendas</h3>
+                        <p>
+                            Página de vendas desenvolvida para um curso de programação front-end. O projeto apresenta um
+                            layout moderno, responsivo e focado em conversão, destacando os benefícios do curso e
+                            facilitando a inscrição do usuário.
+                        </p>
+                        <ul>
+                            <li>Tecnologias:</li>
+                        </ul>
+                        <p>HTML5, CSS3, JavaScript</p>
+                        <a href="pages/projeto1.html" class="btn">Ver mais</a>
+                    </article>
+
+                    <!-- Projeto 2 -->
+                    <article class="projeto">
+                        <img src="assets/projeto 2.png" alt="Interface do sistema Cortex" loading="lazy">
+                        <h3>Cortex: Sistema de Agente de IA</h3>
+                        <p>
+                            Ecossistema de produtividade que une o poder dos Grandes Modelos de Linguagem (LLMs) com a
+                            gestão de dados de um CRM. Construção de pipelines de dados eficientes e lógica de
+                            "contingência máxima" para garantir alta fidelidade e baixo erro.
+                        </p>
+                        <ul>
+                            <li>Tecnologias:</li>
+                        </ul>
+                        <p>OpenAI/Anthropic APIs, React.js, Tailwind, Webhooks, HTML5, CSS3, JavaScript</p>
+                        <a href="pages/projeto2.html" class="btn">Ver mais</a>
+                    </article>
+
+                    <!-- Projeto 3 -->
+                    <article class="projeto">
+                        <img src="assets/projeto 3.png" alt="Dashboard do CRM Konekt" loading="lazy">
+                        <h3>Konekt: CRM Inteligente com Automação de Leads</h3>
+                        <p>
+                            Plataforma CRM robusta com foco em escalabilidade e integração via API/Webhooks. Motor de IA
+                            integrado que processa dados de múltiplos canais (Shopify, Landing Pages, Ads) para gerar
+                            análises em tempo real e automação de tarefas críticas.
+                        </p>
+                        <ul>
+                            <li>Tecnologias:</li>
+                        </ul>
+                        <p>React/Next.js, Node.js, LLMs APIs</p>
+                        <a href="pages/projeto3.html" class="btn">Ver mais</a>
+                    </article>
+
+                    <!-- Projeto 4 -->
+                    <article class="projeto">
+                        <img src="assets/projeto 4.png" alt="Interface do Wave Music Player" loading="lazy">
+                        <h3>Wave Music: Player de Música Moderno</h3>
+                        <p>
+                            Player de música desenvolvido com interface intuitiva e moderna, permitindo aos usuários
+                            reproduzir, pausar e navegar entre suas músicas favoritas. Design responsivo com controles
+                            de volume, barra de progresso e visualização de informações da faixa em tempo real.
+                        </p>
+                        <ul>
+                            <li>Tecnologias:</li>
+                        </ul>
+                        <p>HTML5, CSS3, JavaScript, Web Audio API</p>
+                        <a href="pages/projeto4.html" class="btn">Ver mais</a>
+                    </article>
+
+                    <!-- Projeto 5 -->
+                    <article class="projeto">
+                        <img src="assets/fisiovidaimg.png" alt="Sistema de gestao para clinica de fisioterapia" loading="lazy">
+                        <h3>FisioVida: Gestao para Clinica de Fisioterapia</h3>
+                        <p>
+                            Sistema de gestao para clinica de fisioterapia com foco em agenda, pacientes e evolucao dos
+                            atendimentos. Centraliza informacoes e melhora o controle das sessoes.
+                        </p>
+                        <ul>
+                            <li>Tecnologias:</li>
+                        </ul>
+                        <p>HTML5, CSS3, JavaScript, Node.js</p>
+                        <a href="pages/projeto5.html" class="btn">Ver mais</a>
+                    </article>
+
+                    <!-- Projeto 6 -->
+                    <article class="projeto">
+                        <img src="assets/contaproimg.png" alt="Sistema de gestao para escritorio de contabilidade" loading="lazy">
+                        <h3>ContaPro: Gestao para Escritorio de Contabilidade</h3>
+                        <p>
+                            Sistema de gestao para escritorio de contabilidade com organizacao de clientes, contratos e
+                            rotinas fiscais. Foco em produtividade e controle de prazos.
+                        </p>
+                        <ul>
+                            <li>Tecnologias:</li>
+                        </ul>
+                        <p>HTML5, CSS3, JavaScript</p>
+                        <a href="pages/projeto6.html" class="btn">Ver mais</a>
+                    </article>
+
+                    <!-- Projeto 7 -->
+                    <article class="projeto">
+                        <img src="assets/netfliximg.png" alt="Plataforma de investimento integrada" loading="lazy">
+                        <h3>Netflix Investimentos: Plataforma de Investimento Integrada</h3>
+                        <p>
+                            Plataforma de investimento com banco de dados funcional e integracoes com APIs bancarias,
+                            Pix, cartao e gateway de pagamento, com painel admin.
+                        </p>
+                        <ul>
+                            <li>Tecnologias:</li>
+                        </ul>
+                        <p>HTML5, CSS3, JavaScript, API, Banco de Dados, BD Schema</p>
+                        <a href="pages/projeto7.html" class="btn">Ver mais</a>
+                    </article>
+
+                    <!-- Projeto 8 -->
+                    <article class="projeto">
+                        <img src="assets/terracoburgerimg.png" alt="Sistema de pedidos para ham
+                        ria" loading="lazy">
+                        <h3>Terraço Burger: Sistema de Pedidos</h3>
+                        <p>
+                            Sistema de pedidos para hamburgeria com cardapio digital, montagem de pedidos e fluxo
+                            rapido de atendimento.
+                        </p>
+                        <ul>
+                            <li>Tecnologias:</li>
+                        </ul>
+                        <p>HTML5, CSS3, JavaScript</p>
+                        <a href="pages/projeto8.html" class="btn">Ver mais</a>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -135,13 +260,11 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin defer></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin defer></script>
-    <script src="assets/carousel/carousel.js" defer></script>
     <script src="src/js/main.js"></script>
     <script src="src/js/theme-toggle.js"></script>
     <script src="src/js/smooth-scroll.js"></script>
     <script src="src/js/form-handler.js"></script>
+    <script type="module" src="react-carousel/dist/carousel.js"></script>
 </body>
 
 </html>
